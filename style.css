@@ -156,6 +156,7 @@ text-align: left;
 .game-name-container{
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 .game-name-1{
   display: flex;
@@ -163,6 +164,33 @@ text-align: left;
   align-items: center;
   border-radius: 50px;
 background: #FFF;
+gap: 10px;
+}
+.game-1{
+  width: 50px;
+}
+.footer-container{
+  margin-top: 100px;
+  background: #0B0223;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 70px;
+}
+.policy{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 70px;
+}
+.last-line{
+  margin-top: 70px;
+  text-align: center;
 }
 @media screen and (max-width: 576px) {
   .nav-container,
