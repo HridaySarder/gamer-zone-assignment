@@ -202,6 +202,8 @@ text-align: left;
 }
 
 .footer-container {
+  width: 100%;
+  margin: 0 auto;
   margin-top: 100px;
   background: #0b0223;
   color: white;
@@ -212,20 +214,21 @@ text-align: left;
 .about {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 20px;
   margin-top: 70px;
 }
 .about-icon {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   margin-top: 50px;
 }
+
 .policy {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 20px;
   margin-top: 50px;
 }
 .last-line {
@@ -233,15 +236,57 @@ text-align: left;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
+  *{
+    margin-right: 0px;
+  }
   .nav-container,
   .banner-container,
   .online-game-img,
   .play-instant {
     flex-direction: column;
-    width: 100%;
     margin: 0px auto;
   }
   .nav-title img {
     width: 50%;
+  }
+  .nav-content{
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .nav-content li{
+    margin-top: 25px;
+  }
+  .banner-img img{
+    max-width: 400px;
+    align-items: center;
+   
+  }
+  .play-img-1 {
+    width: 350px;
+    margin-right: 0px;
+}
+.footer-container{
+  width: 100%;
+  margin: 0 auto;
+}
+.about{
+  flex-wrap: wrap;
+}
+.policy{
+  flex-wrap: wrap;
+}
+
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+  .nav-container,
+  .banner-container,
+  .online-game-img,
+  .play-instant {
+    flex-direction: column;
+  }
+  .footer-container{
+    width: 100%;
+    margin: 0 auto;
   }
 }
